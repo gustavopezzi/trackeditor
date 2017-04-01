@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Track Editor (Lab)</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<link href="css/fonts.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+		<script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script type="text/javascript" src="js/lib/vector.js"></script>
+        <script type="text/javascript" src="js/lib/p5.js"></script>
+		<script type="text/javascript" src="js/track-editor.js"></script>
+		<script>
+            var canvasContext;
+			$(document).ready(function () {
+				$('.btn-generate-track').click(function () {
+					generateTrack();
+				});
+				$('.btn-save-points').click(function () {
+					savePoints();
+				});
+				$('.btn-clear-points').click(function () {
+					clearPoints();
+				});
+                $('.btn-show-points').click(function () {
+					toggleDisplayControlPoints();
+				});
+                $('.btn-show-track-lines').click(function () {
+					toggleDisplayTrackLines();
+				});
+                $('.btn-show-grass').click(function () {
+					toggleDisplayGrass();
+				});
+			});
+		</script>
+    </head>
+    <body>
+		<div class='button-menu-container'>
+			<button class="btn-generate-track">generate random track</button>
+			<button class="btn-save-points">save to disk</button>
+            <button class="btn-clear-points">clear track</button>
+            <div></div>
+			<button class="btn-show-track-lines">view track lines</button>
+            <button class="btn-show-points">view control points</button>
+            <button class="btn-show-grass">view grass image</button>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+html, body {
+    background: black;
+    cursor: url(../img/pointer.png), pointer;
+    font-family: 'CharriotDeluxe';
+}
+
+canvas {
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-width: 9px;
+    border-left-color: #99B4E1;
+    border-top-color: #99B4E1;
+    border-right-color: #4A5B89;
+    border-bottom-color: #4A5B89;
+    cursor:url(../img/cross.png), pointer;
+}
+
+.button-menu-container {
+	display: block;
+	text-align: center;
+    margin: 30px 0px;
+}
+
+button {
+    display: inline-block;
+    padding: 2px 10px 2px 10px;
+    outline-style: none;
+    background: #8279BA;
+    border-style: solid;
+    border-width: 4px;
+    margin: 10px auto;
+    border-left-color: #99B4E1;
+    border-top-color: #99B4E1;
+    border-right-color: #4A5B89;
+    border-bottom-color: #4A5B89;
+    font-family: 'CharriotDeluxe';
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: -1px;
+    width: 200px;
+    cursor:url(../img/pointer.png), pointer;
+}
+
+button:active {
+    border-style: solid;
+    border-width: 4px;
+    border-left-color: #485C8E;
+    border-top-color: #485C8E;
+    border-right-color: #9CABE4;
+    border-bottom-color: #9CABE4;
+    background-color: #6A72A3;
+    font-family: 'CharriotDeluxe';
+    font-size: 15px;
+    cursor:url(../img/pointer.png), pointer;
+}
